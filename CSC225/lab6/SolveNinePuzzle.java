@@ -1,0 +1,236 @@
+import java.util.HashMap;
+import java.util.ArrayDeque;
+import java.util.Arrays;
+import java.util.Scanner;
+import java.io.*;
+
+
+public class SolveNinePuzzle{
+	
+	/*----PuzState is an object which holds the 3x3 matrix for the puzzle state
+	  to allow for the use of Java util classes----*/
+	public static  class PuzState{
+		
+		//vars
+		private int[][] state = new int[3][3];
+		private int zeroI;
+		private int zeroJ;
+		
+		//constructor
+		public PuzState(int[][] arr){
+			for(int i = 0;i < 3;i++){
+				for(int j = 0; j < 3;j++){
+					this.state[i][j] = arr[i][j];
+					if(arr[i][j] == 0){
+						this.zeroI = i;
+						this.zeroJ = j;
+					}
+				}
+			}
+		}
+		
+		//methods
+		public int[][] getArray(){
+			return this.state;
+		}
+		
+		public int getZeroI(){
+			return this.zeroI;
+		}
+		
+		public int getZeroJ(){
+			return this.zeroJ;
+		}
+		//Overrides the toString() method from the Object class
+		public String toString(){
+			StringBuilder s = new StringBuilder();
+			for(int i = 0;i < 3;i++){
+				for(int j = 0; j < 3;j++){
+					s.append(state[i][j] + " ");
+				}
+				s.append("\n");
+			}
+			return s.toString();
+		}
+		
+		public void moveZeroUp(){ 
+			if(zeroI==0){
+				System.out.println("Error: Cannot move zero up.");
+			}
+			this.state[zeroI][zeroJ] = this.state[zeroI-1][zeroJ];
+			this.zeroI--;
+			this.state[zeroI][zeroJ] = 0;
+		}
+		
+		public void moveZeroDown(){ 
+			if(zeroI==2){
+				System.out.println("Error: Cannot move zero down.");
+			}
+			this.state[zeroI][zeroJ] = this.state[zeroI+1][zeroJ];
+			this.zeroI++;
+			this.state[zeroI][zeroJ] = 0;
+		}
+		
+		public void moveZeroLeft(){
+			if(zeroJ==0){
+				System.out.println("Error: Cannot move zero left.");
+			}
+			this.state[zeroI][zeroJ] = this.state[zeroI][zeroJ-1];			
+			this.zeroJ--; 
+			this.state[zeroI][zeroJ] = 0;
+		}
+		
+		public void moveZeroRight(){ 
+			if(zeroJ==2){
+				System.out.println("Error: Cannot move zero right.");
+			}
+			this.state[zeroI][zeroJ] = this.state[zeroI][zeroJ+1];
+			this.zeroJ++; 
+			this.state[zeroI][zeroJ] = 0;
+		}
+		
+		/*This method takes a PuzState object and does an array comparison between
+		 *the other PuzState array and this PuzState array*/
+		public boolean equals(PuzState other){
+			int[][] temp = other.getArray();
+			for(int i = 0;i < 3;i++){
+				for(int j = 0; j < 3;j++){
+					if(state[i][j] != temp[i][j]) return false;
+				}
+			}
+			return true;
+		}
+	}
+	/*----END PuzState Class----*/
+	HashMap seen = new HashMap();
+	ArrayDeque<PuzState> q = new ArrayDeque<PuzState>();//Queue for the operation of the BFS search
+	PuzState goal = new PuzState(new int[][]{{1,2,3},{4,5,6},{7,8,0}});
+	
+	/*Used for internal testing of PuzState Methods*/
+	private void testMoveMethods(){
+		PuzState upState = new PuzState(new int[][]{{4,2,3},{0,5,6},{7,8,9}});
+		upState.moveZeroUp();
+		System.out.println("Move up: \n" + upState.toString());
+		upState.moveZeroRight();
+		System.out.println("Move right: \n" + upState.toString());
+		upState.moveZeroDown();
+		System.out.println("Move down: \n" + upState.toString());
+		upState.moveZeroLeft();
+		System.out.println("Move left: \n" + upState.toString());
+	}
+	
+	/*Takes in a PuzState and performs a BFS search for the shortest path to a solution.
+	 *Each node is converted to a string and stored in the "seen" hash map, with the parent of 
+	 *the node stored as the associated value.
+	 *
+	 *Returns true if a path was found, and false if not.*/
+	public boolean SolvePuzzle(PuzState start){
+		q.add(start);
+		
+		while(!(q.isEmpty()) && !(q.peek().equals(goal))){
+			PuzState cur = q.pop();
+			
+			if(cur.getZeroI() > 0){
+				PuzState upState = new PuzState(cur.getArray());
+				upState.moveZeroUp();
+				if(!seen.containsKey(upState.toString())){
+					seen.put(upState.toString(), cur);
+					q.add(upState);
+				}
+				
+			}
+			
+			if(cur.getZeroI() < 2){
+				PuzState downState = new PuzState(cur.getArray());
+				downState.moveZeroDown();
+				if(!seen.containsKey(downState.toString())){
+					seen.put(downState.toString(), cur);
+					q.add(downState);
+				}
+			}
+			
+			if(cur.getZeroJ() > 0){
+				PuzState leftState = new PuzState(cur.getArray());
+				leftState.moveZeroLeft();
+				if(!seen.containsKey(leftState.toString())){
+					seen.put(leftState.toString(), cur);
+					q.add(leftState);
+				}
+				
+			}
+			
+			if(cur.getZeroJ() < 2){
+				PuzState rightState = new PuzState(cur.getArray());
+				rightState.moveZeroRight();
+				if(!seen.containsKey(rightState.toString())){
+					seen.put(rightState.toString(), cur);
+					q.add(rightState);
+				}
+				
+			}
+		}
+		
+		if(q.isEmpty()) return false;
+		
+		return true;
+	}
+	
+	public static void main(String[] args) throws FileNotFoundException {
+		int count = 0;
+		int cur;
+		Scanner in = new Scanner(new File(args[0]));
+		ArrayDeque<Integer> results = new ArrayDeque<Integer>();
+		long startTime = System.currentTimeMillis();		
+		while(in.hasNextInt()){
+			SolveNinePuzzle solver = new SolveNinePuzzle();
+			count++;
+			int[][] start = new int[3][3];
+			for(int i = 0; i<3;i++){
+				for(int j = 0;j<3;j++){
+					start[i][j] = in.nextInt();
+				}
+			}
+			
+			PuzState startState = new PuzState(start);
+			
+			System.out.println("\nPuzzle "+count+": \n\n"+startState.toString()+"\nAttempting to Solve...\n");
+			
+			if(solver.SolvePuzzle(startState)){
+				String s = new String(solver.goal.toString());
+				ArrayDeque<String> printStack = new ArrayDeque<String>();
+				while(!s.equals(startState.toString())){
+					String temp = new String(s);
+					printStack.push(temp);
+					s = solver.seen.get(temp).toString();
+				}
+				System.out.println(s.toString());
+				int counter = 0;
+				while(!printStack.isEmpty()){
+					System.out.println(printStack.pop());
+					counter++;
+				}
+				results.add(counter);
+			}else{
+				results.add(0);
+			}
+		}
+		long endTime = System.currentTimeMillis();
+		long totalTime = endTime-startTime;
+		double totalSec = totalTime/1000.0;
+		double averageTime = (totalSec/count);
+		while(!results.isEmpty()){
+			int boardNum = 0;
+			boardNum++;
+			cur = results.pop();
+			if(cur>0){
+				System.out.printf("Board %d: Solvable (%d moves))\n",boardNum, cur);
+			} else {
+				System.out.printf("Board %d: Unsolvable\n", boardNum);
+			}
+	
+		}
+		System.out.printf("Processed %d boards\n",count);
+		System.out.printf("Average Time: %f seconds\n", averageTime);
+	}
+
+}
