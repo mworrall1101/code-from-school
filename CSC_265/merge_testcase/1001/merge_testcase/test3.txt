@@ -1,0 +1,22 @@
+alpha numeric,       verbs   ,animals, genus species
+1,walk , walrus,odobenus rosmarus 
+2,	sing, slow loris,loris tardigratus 
+d,	defenestrate,desert tortoise,gopherus agassizii
+c,comprehend,capybara,hydrochoerus hydrocaeris 
+3,extrapolate,river otter,lutra canadensis
+f, hold,,
+4, question, feral rock pigeon,columba livia
+H,hide,giant panda bear,ailuropoda melanoleuca
+D,dictate, bottle nose dolphin,tursipos truncatus
+
+5,yodel, ocelot,felis pardalis
+6,notice,north american beaver,castor canadensis
+e,elucidate, green winged macaw,ara choloptera
+E, evaluate, meerkat,suricata suricatta
+7,visualize,hippopotamus , hippopotamus amphibius
+8,unravel,lynx,felis caracal
+9,yawn, platypus,Ornithorhynchus anatinus
+a,abbreviate,armadillo,Priodontes maximus
+g,find, great white shark,carcharodon carcharias 
+j,numerate,, 
+

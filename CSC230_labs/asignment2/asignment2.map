@@ -1,0 +1,26 @@
+
+AVRASM ver. 2.1.42  H:\CSC230_labs\asignment2\a2q4.asm Tue Jun 14 14:01:56 2016
+
+
+EQU  DDRB         00000024
+EQU  PORTB        00000025
+EQU  DDRL         0000010a
+EQU  PORTL        0000010b
+EQU  ADCSRA       0000007a
+EQU  ADMUX        0000007c
+EQU  ADCL         00000078
+EQU  ADCH         00000079
+CSEG display      00000050
+CSEG lp           0000000e
+CSEG check_button 0000001d
+CSEG delay        00000044
+CSEG wait         00000022
+CSEG endsw        00000043
+CSEG del1         00000044
+CSEG del2         00000046
+CSEG del3         00000048
+CSEG displp       00000054
+CSEG skip4        00000061
+CSEG skip2        00000067
+CSEG displp2      00000068
+CSEG skip3        0000006c

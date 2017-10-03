@@ -1,0 +1,7 @@
+letter,  number,    day
+P   ,0000 ,mon  
+Q,9999,tue
+A,1234,wed
+B,five,fri
+,nine,sun
+,fine,sun

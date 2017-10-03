@@ -1,0 +1,9 @@
+Name,ID,GPA,Midterm,Final,Average,Class 1,Class 2,,School,City
+Austin,555,3.8,90,88,88.6,MATH,PHYS,,Western,London
+Carl,444,3.1,77,75,75.6,CSC,MATH,,Queens,Kingston
+James,,,,,,CSC,SENG,,,
+Kirsten,666,2.9,,,,BIO,SENG,,McGill,Montreal
+Luke,111,3.8,92,94,93.4,CSC,STATS,,Uvic,Victoria
+Mariah,222,2.7,56,71,66.5,SENG,CSC,,UBC,Vancouver
+Sarah,333,3.2,83,80,80.9,MATH,BIO,,UofT,Toronto
+Tyler,,,,,,CSC,PHYS,,,

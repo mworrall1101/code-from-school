@@ -1,0 +1,1 @@
+python3 merge.py "player_name" T_1.csv T_2.csv T_3.csv

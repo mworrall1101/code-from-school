@@ -1,0 +1,164 @@
+Script for ibus started at run_im.
+Script for auto started at run_im.
+Script for default started at run_im.
+Script for ibus started at run_im.
+Script for auto started at run_im.
+Script for default started at run_im.
+
+** (cinnamon-settings-daemon:12791): WARNING **: Failed to get session for pid: GDBus.Error:org.freedesktop.ConsoleKit.Manager.GeneralError: Unable to lookup session information for process '12791'
+
+** (cinnamon-settings-daemon:12791): WARNING **: Failed to get session for pid: GDBus.Error:org.freedesktop.ConsoleKit.Manager.GeneralError: Unable to lookup session information for process '12791'
+
+** (cinnamon-settings-daemon:12791): WARNING **: Failed to get session for pid: GDBus.Error:org.freedesktop.ConsoleKit.Manager.GeneralError: Unable to lookup session information for process '12791'
+
+(gnome-terminal:12873): GLib-GIO-CRITICAL **: g_settings_get: the format string may not contain '&' (key 'monospace-font-name' from schema 'org.gnome.desktop.interface'). This call will probably stop working with a future version of glib.
+
+** (nm-applet:12871): WARNING **: Could not initialize NMClient /org/freedesktop/NetworkManager: The name org.freedesktop.NetworkManager was not provided by any .service files
+
+(nm-applet:12871): nm-applet-WARNING **: Error connecting to ModemManager: Error calling StartServiceByName for org.freedesktop.ModemManager1: GDBus.Error:org.freedesktop.DBus.Error.Spawn.ExecFailed: Cannot launch daemon, file not found or permissions invalid
+
+(nm-applet:12871): nm-applet-WARNING **: Failed to register as an agent: (2) The name org.freedesktop.NetworkManager was not provided by any .service files
+
+(nm-applet:12871): nm-applet-WARNING **: Failed to register as an agent: (2) The name org.freedesktop.NetworkManager was not provided by any .service files
+nm-applet-Message: using fallback from indicator to GtkStatusIcon
+Cjs-Message: JS LOG: About to start Cinnamon
+
+** (nemo:12870): WARNING **: Can not determine workarea, guessing at layout
+St-Message: cogl npot texture sizes SUPPORTED
+Window manager warning: Trying to remove non-existent custom keybinding "magnifier-zoom-in".
+Window manager warning: Trying to remove non-existent custom keybinding "magnifier-zoom-out".
+Cjs-Message: JS LOG: Cinnamon started at Tue Sep 19 2017 11:20:45 GMT-0700 (PDT)
+
+(firefox:12864): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:12864): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:12864): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:12864): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+failed to create drawable
+
+(/usr/lib/firefox/firefox:13023): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(/usr/lib/firefox/firefox:13023): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(/usr/lib/firefox/firefox:13023): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(/usr/lib/firefox/firefox:13023): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+cinnamon-session[12643]: WARNING: Could not launch application 'cinnamon-screensaver.desktop': Unable to start application: Failed to execute child process "cinnamon-screensaver" (Permission denied)
+
+(zeitgeist-datahub:13086): GLib-GObject-WARNING **: invalid (NULL) pointer instance
+
+(zeitgeist-datahub:13086): GLib-GObject-CRITICAL **: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(cinnamon:12855): St-WARNING **: Did not find color property '-arrow-border-color'
+
+(cinnamon:12855): St-WARNING **: Did not find color property '-arrow-background-color'
+
+(cinnamon:12855): St-WARNING **: Did not find color property '-gradient-start'
+
+(cinnamon:12855): St-WARNING **: Did not find color property '-gradient-end'
+Window manager warning: Log level 16: STACK_OP_RAISE_ABOVE: sibling window 0x2e00003 not in stack
+Window manager warning: Log level 16: STACK_OP_LOWER_BELOW: sibling window 0x2e00003 not in stack
+
+(cinnamon:12855): St-WARNING **: Did not find color property '-arrow-border-color'
+
+(cinnamon:12855): St-WARNING **: Did not find color property '-arrow-background-color'
+
+(cinnamon:12855): St-WARNING **: Did not find color property '-gradient-start'
+
+(cinnamon:12855): St-WARNING **: Did not find color property '-gradient-end'
+
+(cinnamon:12855): St-WARNING **: Did not find color property '-arrow-border-color'
+
+(cinnamon:12855): St-WARNING **: Did not find color property '-arrow-background-color'
+
+(cinnamon:12855): St-WARNING **: Did not find color property '-gradient-start'
+
+(cinnamon:12855): St-WARNING **: Did not find color property '-gradient-end'
+Window manager warning: Log level 16: STACK_OP_RAISE_ABOVE: sibling window 0x3000003 not in stack
+Window manager warning: Log level 16: STACK_OP_LOWER_BELOW: sibling window 0x3000003 not in stack
+
+(gnome-terminal:12873): Gtk-WARNING **: Unknown property: GtkHScale.update-policy
+
+(gnome-terminal:12873): Gtk-WARNING **: Unknown property: GtkHScale.update-policy
+
+(cinnamon:12855): St-WARNING **: Did not find color property '-arrow-border-color'
+
+(cinnamon:12855): St-WARNING **: Did not find color property '-arrow-background-color'
+
+(cinnamon:12855): St-WARNING **: Did not find color property '-gradient-start'
+
+(cinnamon:12855): St-WARNING **: Did not find color property '-gradient-end'
+/usr/share/system-config-printer/applet.py:342: Warning: Source ID 11 was not found when attempting to remove it
+  GLib.source_remove (self.timer)
+/usr/share/system-config-printer/applet.py:342: Warning: Source ID 13 was not found when attempting to remove it
+  GLib.source_remove (self.timer)
+cinnamon-session[12643]: WARNING: Unable to determine session: Unable to lookup session information for process '12643'
+
+(cinnamon-settings-daemon:12791): GLib-CRITICAL **: Source ID 34 was not found when attempting to remove it
+
+(cinnamon-settings-daemon:12791): wacom-plugin-CRITICAL **: csd_wacom_device_get_device_type: assertion 'CSD_IS_WACOM_DEVICE (device)' failed
+
+(cinnamon-settings-daemon:12791): wacom-plugin-CRITICAL **: csd_wacom_device_get_device_type: assertion 'CSD_IS_WACOM_DEVICE (device)' failed
+
+(cinnamon-settings-daemon:12791): wacom-plugin-CRITICAL **: csd_wacom_device_get_device_type: assertion 'CSD_IS_WACOM_DEVICE (device)' failed
+
+(cinnamon-settings-daemon:12791): wacom-plugin-CRITICAL **: csd_wacom_device_get_device_type: assertion 'CSD_IS_WACOM_DEVICE (device)' failed
+
+(cinnamon-settings-daemon:12791): wacom-plugin-CRITICAL **: csd_wacom_device_get_device_type: assertion 'CSD_IS_WACOM_DEVICE (device)' failed
+
+(cinnamon-settings-daemon:12791): wacom-plugin-CRITICAL **: csd_wacom_device_get_device_type: assertion 'CSD_IS_WACOM_DEVICE (device)' failed
+
+(cinnamon-settings-daemon:12791): wacom-plugin-CRITICAL **: csd_wacom_device_get_device_type: assertion 'CSD_IS_WACOM_DEVICE (device)' failed
+
+(firefox:12864): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:12864): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:12864): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:12864): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(/usr/lib/firefox/firefox:13023): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(/usr/lib/firefox/firefox:13023): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(/usr/lib/firefox/firefox:13023): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(/usr/lib/firefox/firefox:13023): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:12864): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:12864): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:12864): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:12864): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:12864): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:12864): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:12864): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:12864): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:12864): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:12864): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:12864): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:12864): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:12864): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:12864): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+
+(firefox:12864): GLib-GObject-CRITICAL **: g_object_ref: assertion 'object->ref_count > 0' failed
+
+(firefox:12864): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
+nm-applet-Message: PID 18472 (we are 12871) sent signal 15, shutting down...
+
+** (nm-applet:12871): CRITICAL **: nm_secret_agent_unregister: assertion 'priv->registered == TRUE' failed

@@ -1,0 +1,20 @@
+
+AVRASM ver. 2.1.42  H:\CSC230_labs\lab6\lab6.asm Tue Jun 14 14:42:26 2016
+
+
+EQU  SPH          0000005e
+EQU  SPL          0000005d
+DEF  XH           r27
+DEF  XL           r26
+DEF  YH           r29
+DEF  YL           r28
+DEF  ZH           r31
+DEF  ZL           r30
+CSEG src          00000041
+DSEG dest         00000200
+CSEG strcpy       0000001e
+CSEG strlength    00000039
+DSEG length       0000020e
+CSEG done         0000001c
+CSEG next_char    0000002d
+CSEG countlp      0000003b

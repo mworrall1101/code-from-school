@@ -1,0 +1,52 @@
+'''
+	University of Victoria, Dept. of Computer Science
+	SENG 265 - Summer 2016
+	Lab
+
+	Written by Tom Arjannikov 
+'''
+
+import os
+import sys
+
+def recursive_list(directory="."):
+	file_list = os.listdir(directory)
+	c_files = []
+	for my_file in file_list:
+		my_file = os.path.join(directory, my_file)
+		if(os.path.isdir(my_file)):
+			c_files = c_files + recursive_list(my_file)
+		if(os.path.isfile(my_file)):
+			if my_file.endswith(".c"):
+#				import pdb
+#				pdb.set_trace()
+				c_files.append(my_file)
+	return c_files	
+
+def recursive_dir_scan(directory = ".", c_files = []):	
+	file_list = os.listdir(directory)
+	for filename in file_list:
+		#filename = directory + "/" + filename
+		filename = os.path.join(directory, filename) 
+		if(os.path.isdir(filename)):
+			recursive_dir_scan(filename, c_files)
+		if(filename.endswith(".c")):
+			c_files.append(filename)
+
+# main() 
+if __name__ == "__main__":
+	directory = ".."
+
+	if len(sys.argv) > 1:
+		directory = sys.argv[1]
+
+	c_files = []
+	recursive_dir_scan(directory, c_files)
+	for my_file in c_files:
+		print(my_file)
+
+	print("\n\n")
+	c_files = recursive_list(directory)
+	for my_file in c_files:
+		print(my_file)
+

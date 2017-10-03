@@ -1,0 +1,29 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+
+entity lab_4 is 
+
+ port(
+		A0	: in	std_logic;
+		B0	: in	std_logic;
+		C0	: in	std_logic;
+		C1	: out	std_logic;
+		S0	: out	std_logic
+	);
+
+end lab_4;
+
+
+architecture arch1 of lab_4 is
+
+begin
+
+  SIG1 <= B0 NAND A0 after 1NS;
+  SIG2 <= B0 NOR A0 after 1NS;
+  SIG3 <= (B0 NAND A0) AND (NOT C0) after 1NS;
+  C1 <= ((B0 NAND A0) AND (NOT C0)) NOR (B0 NOR A0) after 1NS;
+  SIG4 <= (B0 NAND A0) AND (B0 OR A0) after 1NS;
+  S0 <= C0 XOR ((B0 NAND A0) AND (B0 OR A0)) after 1NS;
+
+end arch1;

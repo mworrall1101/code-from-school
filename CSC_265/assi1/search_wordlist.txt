@@ -1,0 +1,10 @@
+
+address
+ floppy
+
+  
+speed
+  DOS
+
+		HD
+MFM

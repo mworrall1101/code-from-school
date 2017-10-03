@@ -1,0 +1,2 @@
+This line has no tags
+This <b>text has </b>a tag with no spaces surrounding it

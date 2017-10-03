@@ -1,0 +1,21 @@
+random french words,english idioms,alpha numeric
+jeter, a dime a dozen,j
+immeuble, all thumbs,G
+droit,bite the bullet,i
+gauche, two left feet	,2	
+c'est la vie,don't look a gift horse in the mouth,7
+capital,don't have a cow (moo!),h
+avoir besoin, beggers can't be choosers,g
+quatre,elephant in the room,4
+fenetre, fit as a fiddle,f
+pomme de terre, kick the bucket,e
+monsieur,throw under the bus,H
+poisson et frites,spill the beans,d
+     ,basket case,A
+excusez-moi,break a leg,C
+arbre, 		lips are sealed,c		
+avion, raining cats and dogs,F
+livre,pushing up daisies,b
+la vie en rose,hit the road,a
+eau de mer, a better pill to swallow,I
+comment?, at the drop of a hat,J

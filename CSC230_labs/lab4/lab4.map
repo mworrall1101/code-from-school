@@ -1,0 +1,33 @@
+
+AVRASM ver. 2.1.42  H:\CSC230_labs\lab4\button.asm Wed Jun 29 19:45:34 2016
+
+
+EQU  DDRB         00000024
+EQU  PORTB        00000025
+EQU  DDRL         0000010a
+EQU  PORTL        0000010b
+EQU  ADCSRA       0000007a
+EQU  ADMUX        0000007c
+EQU  ADCL         00000078
+EQU  ADCH         00000079
+EQU  ADCSRB       0000007b
+EQU  TCCR0A       00000044
+EQU  TCCR0B       00000045
+EQU  OCR0A        00000047
+EQU  TCNT1H       00000085
+EQU  TCNT1L       00000084
+EQU  TCCR1A       00000080
+EQU  TCCR1B       00000081
+EQU  TIMSK1       0000006f
+CSEG setup        0000003c
+CSEG timer_isr    00000075
+CSEG ADC_isr      00000054
+CSEG timer_init   00000065
+CSEG lp           0000004a
+CSEG delay        00000083
+CSEG adcdone      00000062
+CSEG check_button 0000007d
+CSEG skip         00000082
+CSEG del1         00000085
+CSEG del2         00000087
+CSEG del3         00000089

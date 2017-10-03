@@ -1,0 +1,26 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.42</VERSION>
+ <DEVICE>Unknown</DEVICE>
+ <WORKING_DIR>H:\CSC230_labs\lab8</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files (x86)\Atmel\AVR Tools\AvrAssembler2\Appnotes</DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>H:\CSC230_labs\lab8\timers_interrupt.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>H:\CSC230_labs\lab8\lab8.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>H:\CSC230_labs\lab8\lab8.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>H:\CSC230_labs\lab8\lab8.map</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <setup><FILE>H:\CSC230_labs\lab8\timers_interrupt.asm</FILE><LINE>27</LINE></setup>
+  <timer1_isr><FILE>H:\CSC230_labs\lab8\timers_interrupt.asm</FILE><LINE>77</LINE></timer1_isr>
+  <timer_init><FILE>H:\CSC230_labs\lab8\timers_interrupt.asm</FILE><LINE>43</LINE></timer_init>
+  <lp><FILE>H:\CSC230_labs\lab8\timers_interrupt.asm</FILE><LINE>39</LINE></lp>
+ </LABELS>
+</ASSEMBLER_INFO>

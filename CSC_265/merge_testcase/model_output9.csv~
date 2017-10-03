@@ -1,0 +1,12 @@
+Output:
+player_name,team,goals,position,salary,contract_length
+Antoine Griezmann,,,,20000000,9
+Dele Alli,Tottenham Hotspur,35,Midfielder,,
+Didier Drogba,Montreal Impact,50,Striker,,
+Eden Hazard,,,,5000000,7
+Jamie Vardy,Leicester City,500,Striker,5000000,6
+Mario Gotze,,,,19000000,10
+Mesut Ozil,Arsenal,,,,
+Romelu Lukaku,,75,Striker,,
+Thomas Muller,,,,25000000,8
+Zlatan Ibrahimovic,Manchester United,100,Striker,15000000,4

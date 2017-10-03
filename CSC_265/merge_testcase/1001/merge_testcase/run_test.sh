@@ -1,0 +1,1 @@
+python3 merge.py 'alpha numeric' test.csv test2.txt test3.txt
